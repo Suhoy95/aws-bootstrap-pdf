@@ -1,0 +1,16 @@
+{
+    "root": "./",
+    "title": "Знакомство с AWS",
+    "description": "",
+    "author": "Сухоплюев Илья",
+    "language": "ru",
+    
+    "pdf.pageNumbers": true,
+    "pdf.fontSize": 16,
+    "pdf.fontFamily": "Arial",
+    "pdf.paperSize": "a4",
+    "pdf.margin.top": 56,
+    "pdf.margin.bottom": 56,
+    "pdf.margin.right": 62,
+    "pdf.margin.left": 62
+}

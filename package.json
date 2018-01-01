@@ -1,0 +1,16 @@
+{
+  "name": "aws-bootstrap-book",
+  "version": "1.0.0",
+  "description": "AWS",
+  "main": "index.js",
+  "scripts": {
+    "start": "gitbook serve",
+    "pdf": "gitbook pdf ./ ./book.pdf",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Сухоплюев Илья",
+  "license": "ISC",
+  "dependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}
