@@ -1,13 +1,11 @@
 # DynamoDB
 
-Welcome to the Amazon DynamoDB Developer Guide.
+Amazon DynamoDB — это быстрая, простая и масштабируемая NoSQL база данных.
 
-Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. DynamoDB lets you offload the administrative burdens of operating and scaling a distributed database, so that you don't have to worry about hardware provisioning, setup and configuration, replication, software patching, or cluster scaling.
+[Документация Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
 
-With DynamoDB, you can create database tables that can store and retrieve any amount of data, and serve any level of request traffic. You can scale up or scale down your tables' throughput capacity without downtime or performance degradation, and use the AWS Management Console to monitor resource utilization and performance metrics.
+## Создание таблиц
 
-[Документация Amazon](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+![Выбрав Create DynamoDB table, мы попадем в диалоговое окно, где нужно задать имя таблицы, а также первичное поле, по которому можно найти запись. В дополнении, можно задать правило сортировки объектов.](../img/dynamoDB-creating.png)
 
-![qwe](../img/dynamoDB-creating.png)
-
-![qwe](../img/dynamoDB-table-actions.png)
+![После этого, можно отслеживать работу этой таблицы, а также добавлять объекты любой сложности, с учетом требования первичного поля и поля сортировки](../img/dynamoDB-table-actions.png)
