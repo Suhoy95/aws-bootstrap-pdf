@@ -6,7 +6,7 @@ For example, you can send marketing emails such as special offers, transactional
 
 You only pay for what you use, so you can send and receive as much or as little email as you like. For service highlights, FAQs, and pricing information, go to the Amazon SES Detail Page.
 
-[Документация SES](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/Welcome.html)
+[Документация Amazon SES](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/Welcome.html)
 
 ## Валидация домена для отправки сообщений
 
@@ -14,7 +14,6 @@ You only pay for what you use, so you can send and receive as much or as little 
 
 ![Ввести имя домена, а так же попросить настроить DKIM](../img/ses-verifying.png)
 
-- [DNS и DNS-сервер BIND](https://habrahabr.ru/post/137587/)
 - [DKIM и SPF](https://habrahabr.ru/post/322616/)
 
 ## Валидация email
