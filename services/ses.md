@@ -1,37 +1,50 @@
 # Simple Email Service (SES)
 
-Welcome to the Amazon Simple Email Service (Amazon SES) Developer Guide. Amazon SES is an email platform that provides an easy, cost-effective way for you to send and receive email using your own email addresses and domains.
+Amazon SES (Simple Email Service или простой email-сервис) — служба позволяющая
+работать с электронной почтой: отправлять и получать сообщения, устраивать
+электронные рассылки и следить за репутацией вашего почтового ящика.
 
-For example, you can send marketing emails such as special offers, transactional emails such as order confirmations, and other types of correspondence such as newsletters. When you use Amazon SES to receive mail, you can develop software solutions such as email autoresponders, email unsubscribe systems, and applications that generate customer support tickets from incoming emails.
-
-You only pay for what you use, so you can send and receive as much or as little email as you like. For service highlights, FAQs, and pricing information, go to the Amazon SES Detail Page.
+Для этого, вам потребуется валидный домен, на ящики которого будут отправляться письма
+или с которого они отправляться. Для этого нужно предварительно иметь настроенный в
+[Route 53](../route-53.md).
 
 [Документация Amazon SES](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/Welcome.html)
 
-## Валидация домена для отправки сообщений
+## Валидация домена для отправки и приема сообщений
 
-![Выбрать Verify domain](../img/ses-verify-domain.png)
+![Для создания домена, на который будет приходить почта, в вкладке Domains нужно выбрать Verify domain](../img/ses-verify-domain.png)
 
-![Ввести имя домена, а так же попросить настроить DKIM](../img/ses-verifying.png)
+![Ввести имя домена, а так же попросить Амазон настроить DKIM](../img/ses-verifying.png)
 
-- [DKIM и SPF](https://habrahabr.ru/post/322616/)
+Когда вы проделаете эти шаги в Route 53 будут занесены MX и TXT записи,
+необходимые для подтверждения, что этот домен принадлежит вам и вы вправе отправлять с
+него почту. Эти записи реализуют несколько механизмов —
+[DKIM и SPF](https://habrahabr.ru/post/322616/).
 
 ## Валидация email
 
-![йцу](../img/ses-email-verification.png)
+В проекте нам понадобится отправлять письмо на личный email. Для этого,
+чтобы избежать неоправданных и случайных спам рассылок в Amazon SES встроен
+механизм предварительной валидации email-адреса, в ходе которой владелец
+ящика соглашается на получение почту от вашего сервиса.
 
-![фыв](../img/ses-verifying-email.png)
+![Для этого во вкладке Email Addresses можно выбрать Verify New Email Address.](../img/ses-email-verification.png)
 
-![ячс](../img/ses-verifying-mail.png)
+![Ввести email, на который мы хотим получать письма](../img/ses-verifying-email.png)
+
+![И дотвердить верификацию, перейдя по ссылке, полученной в верификационном письме](../img/ses-verifying-mail.png)
 
 ## Создание правила
 
-![qwe](../img/ses-create-rule-button.png)
+Для обработки полученных писем автоматически в Amazon SES можно создавать
+наборы правил, которые будут описывать как поступить с полученным письмом.
 
-![qwe](../img/ses-rule-add-recipient.png)
+![Для этого, нужно зайти в группу правил, и выбрать Create Rule](../img/ses-create-rule-button.png)
 
-![qwe](../img/ses-rule-actions.png)
+![На первом шаге, нам будет предложено перечислить ящики-получатели, с которых мы хотим автоматически обрабатывать почту](../img/ses-rule-add-recipient.png)
 
-![qwe](../img/ses-rule-set-name.png)
+![После зададим действия, которые нужно выполнить при получении](../img/ses-rule-actions.png)
 
-![qwe](../img/ses-rule-summary.png)
+![И наконец назовем данное правило, а также опишем цель его создания](../img/ses-rule-set-name.png)
+
+![На последнем шаге нам дадут проверить всю введенную информацию на корректность](../img/ses-rule-summary.png)
