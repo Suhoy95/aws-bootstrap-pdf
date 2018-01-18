@@ -1,17 +1,27 @@
 # Route 53
+Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web service.
 
+[Документация Амазон для разработчиков](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html/)
 
 ![Выбор создания доменной-зоны](../img/route53-create-zone-button.png)
-<center><b>Выбор создания доменной-зоны в Route 53</b></center>
+<p>
+<center><b>Следите за тем, в какой зоне вы используете сервисы</b></center><br/>
+</p>
 
 
 ![Создание доменной-зоны](../img/route53-creating.png)
-<center><b>Создание доменной-зоны</b></center>
+<p>
+<center><b>Следите за тем, в какой зоне вы используете сервисы</b></center><br/>
+</p>
 
 
 ![Адреса dns-серверов данной зоны](../img/route53-nameservers.png)
-<center><b>Адреса dns-серверов данной зоны</b></center>
+<p>
+<center><b>Следите за тем, в какой зоне вы используете сервисы</b></center><br/>
+</p>
 
 
 ![Делегирование управления подзоной DNS серверам Amazon](../img/route53-dns.png)
-<center><b>Делегирование управления подзоной DNS серверам Amazon</b></center>
+<p>
+<center><b>Следите за тем, в какой зоне вы используете сервисы</b></center><br/>
+</p>
