@@ -1,21 +1,21 @@
 # Identity and Access Management (IAM)
 
-AWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.
+Пожалуй, один из самых выжных сервисов — Amazon IAM, позволяет создавать
+пользователей для коллективной разработки в рамках компании, также в его
+функциональность входит описание и назначение привилегий.
+
+После регистрации главного аккаунта (называемый, также как в Unix root-овый) рекомендуется создать специального пользователя, от которого будет вестись вся разработка. Это позволит ограничить возможность совершения непредвиденных критических для приложения действий.
 
 [Документация AWS IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
 
-
-## Создание пользователей
-[Создание пользователей](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
-
 ## Создание роли
 
-![qwe](../img/iam-add-role-service.png)
+![Первое что стоит сделать — выбрать сущность, к которой роль будет иметь основной доступ](../img/iam-add-role-service.png)
 
-![qwe](../img/iam-add-role-permissions.png)
+![После этого нам будет предложено указать дополнительный список разрешений для создаваемой роли](../img/iam-add-role-permissions.png)
 
-![qwe](../img/iam-add-role-name.png)
+![И в конце, нужно будет назвать новую роль](../img/iam-add-role-name.png)
 
 ## Редактирование роли
 
-![qwe](../img/iam-role-policies.png)
+![В последующем можно отредактировать необходимые разрешения, если это потребуется](../img/iam-role-policies.png)
