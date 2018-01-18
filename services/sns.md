@@ -7,23 +7,11 @@ With Amazon SNS, you have the ability to send push notification messages directl
 ## Создание темы (topic)
 
 ![Как создать тему в SNS](../img/sns-create-topic-button.png)
-<p>
-<center><b>Как создать тему в SNS</b></center><br/>
-</p>
 
 ![Для создание темы достаточно указать ее имя](../img/sns-creating-topic.png)
-<p>
-<center><b>Как создать тему в SNS</b></center><br/>
-</p>
 
 ## Работа с созданной темой
 
 ![Для создание темы достаточно указать ее имя](../img/sns-topic-actions.png)
-<p>
-<center><b>Как создать тему в SNS</b></center><br/>
-</p>
 
 ![Для создание темы достаточно указать ее имя](../img/sns-create-message.png)
-<p>
-<center><b>Как создать тему в SNS</b></center><br/>
-</p>

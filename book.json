@@ -4,7 +4,14 @@
     "description": "",
     "author": "Сухоплюев Илья",
     "language": "ru",
-    
+    "plugins": [
+        "image-captions"
+    ],
+    "pluginsConfig": {
+        "image-captions": {
+            "caption": "_PAGE_LEVEL_ Скриншот _PAGE_IMAGE_NUMBER_:&nbsp; _CAPTION_"
+        }
+    },
     "pdf.pageNumbers": true,
     "pdf.fontSize": 16,
     "pdf.fontFamily": "Arial",
