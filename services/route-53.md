@@ -7,7 +7,7 @@ Amazon Route 53 — это масштабируемый DNS (Domain Name System)
 создать ее. Подразумевается, что у вас есть зарегистрированный домен и
 вы можете делигировать его поддомены Амазону.
 
-[Документация Амазон Route 53 для разработчиков](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html/)
+[Документация AWS Route 53 для разработчиков](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html/)
 
 ## Создание доменной зоны
 

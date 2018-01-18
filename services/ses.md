@@ -8,7 +8,7 @@ Amazon SES (Simple Email Service или простой email-сервис) — �
 или с которого они отправляться. Для этого нужно предварительно иметь настроенный в
 [Route 53](../route-53.md).
 
-[Документация Amazon SES](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/Welcome.html)
+[Документация AWS SES](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/Welcome.html)
 
 ## Валидация домена для отправки и приема сообщений
 

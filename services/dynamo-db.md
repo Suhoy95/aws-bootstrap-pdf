@@ -2,7 +2,7 @@
 
 Amazon DynamoDB — это быстрая, простая и масштабируемая NoSQL база данных.
 
-[Документация Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+[Документация AWS DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
 
 ## Создание таблиц
 

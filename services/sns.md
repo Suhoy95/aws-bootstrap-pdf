@@ -12,7 +12,7 @@ C помощью Amazon Simple Notification Service (SNS, или *простой
 с помощью [Lambda](./lambda.md)-функции, как в это делается в
 [менеджере бюджета](../projects/budget-manager.md).
 
-[Докментация Амазон](https://docs.aws.amazon.com/sns/latest/dg/GettingStarted.html)
+[Документация AWS SNS](https://docs.aws.amazon.com/sns/latest/dg/GettingStarted.html)
 
 ## Создание темы (topic)
 
