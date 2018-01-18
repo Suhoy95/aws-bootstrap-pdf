@@ -1,17 +1,27 @@
 # Simple Notification Service (SNS)
 
-With Amazon SNS, you have the ability to send push notification messages directly to apps on mobile devices. Push notification messages sent to a mobile endpoint can appear in the mobile app as message alerts, badge updates, or even sound alerts.
+C помощью Amazon Simple Notification Service (SNS, или *простой сервис увидомлений*)
+можно создавать специальные информационные каналы рассылок, которые смогут
+уведомлять подписавшихся на них пользователей, будь то мобильное приложение
+или уведомления на WEB-сайте.
+
+Основной сущностью данного сервиса является *тема* (топик), в который из разных
+источников будут приходить сообщения, после чего они будут
+отправляться *подписчикам* в виде почтовых писем или СМС-уведомлений.
+Также данные сообщения могут обрабатывать и другие сервисы Амазона, например,
+с помощью [Lambda](./lambda.md)-функции, как в это делается в
+[менеджере бюджета](../projects/budget-manager.md).
 
 [Докментация Амазон](https://docs.aws.amazon.com/sns/latest/dg/GettingStarted.html)
 
 ## Создание темы (topic)
 
-![Как создать тему в SNS](../img/sns-create-topic-button.png)
+![Для создания темы нужно перейти в Topics, где расположена соответствующая кнопка](../img/sns-create-topic-button.png)
 
-![Для создание темы достаточно указать ее имя](../img/sns-creating-topic.png)
+![Достаточно указать имя создаваемой темы](../img/sns-creating-topic.png)
 
 ## Работа с созданной темой
 
-![Для создание темы достаточно указать ее имя](../img/sns-topic-actions.png)
+![В созданной теме можно добавлять подписчиков, а также публиковать сообщения в тему](../img/sns-topic-actions.png)
 
-![Для создание темы достаточно указать ее имя](../img/sns-create-message.png)
+![Интерфейс создания сообщения в тему](../img/sns-create-message.png)
